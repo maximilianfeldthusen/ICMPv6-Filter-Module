@@ -110,5 +110,25 @@ Check your logs:
 ```bash
 dmesg | grep ICMPv6
 ```
+---
+###  **How to Use**
+1. Build:
+   ```bash
+   make
+   ```
 
+2. Load:
+   ```bash
+   sudo insmod icmpv6_filter_proc.ko
+   ```
+
+3. Update parameters at runtime:
+   ```bash
+   echo "type=135 ip=fe80::1 drop=1" | sudo tee /proc/icmpv6_filter
+   ```
+
+4. Inspect logs:
+   ```bash
+   dmesg | grep ICMPv6
+   ```
 
