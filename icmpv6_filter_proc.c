@@ -94,6 +94,6 @@ static void __exit filter_exit(void) {
 
 module_init(filter_init);
 module_exit(filter_exit);
-MODULE_LICENSE("GPL");
+MODULE_LICENSE("MIT");
 MODULE_AUTHOR("YourName");
 MODULE_DESCRIPTION("Dynamic IPv6 ICMPv6 filter with /proc interface");
